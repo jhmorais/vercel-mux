@@ -15,5 +15,5 @@ func GetID() {
 }
 
 func HandlerGetClientByID(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>CREATED Client by id</h1>")
+	fmt.Fprintf(w, "<h1>Get Client by id</h1>")
 }
