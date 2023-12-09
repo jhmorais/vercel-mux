@@ -19,7 +19,7 @@ func BuildConfigFilePath(configFileName string) string {
 func LoadServerEnvironmentVars() error {
 	_, filename, _, _ := runtime.Caller(0)
 
-	viper.SetDefault(ServerEnvironment, "config")
+	viper.SetDefault(ServerEnvironment, "configuration")
 	viper.SetConfigType("json")
 	viper.SetConfigName(viper.GetString(ServerEnvironment))
 
