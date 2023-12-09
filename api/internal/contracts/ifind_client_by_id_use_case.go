@@ -3,7 +3,7 @@ package contracts
 import (
 	"context"
 
-	"myapp/internal/ports/output"
+	"myapp/api/internal/ports/output"
 )
 
 type FindClientByIDUseCase interface {

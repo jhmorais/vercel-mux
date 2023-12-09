@@ -1,7 +1,7 @@
 package output
 
 import (
-	"myapp/internal/domain/entities"
+	"myapp/api/internal/domain/entities"
 )
 
 type ListClient struct {

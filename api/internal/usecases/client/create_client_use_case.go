@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"myapp/internal/contracts"
-	"myapp/internal/domain/entities"
-	"myapp/internal/ports/input"
-	"myapp/internal/ports/output"
-	"myapp/internal/repositories"
+	"myapp/api/internal/contracts"
+	"myapp/api/internal/domain/entities"
+	"myapp/api/internal/ports/input"
+	"myapp/api/internal/ports/output"
+	"myapp/api/internal/repositories"
 )
 
 type createClientUseCase struct {
