@@ -1,4 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/api/gabi/test", "destination": "/api/gabi/test.go" }
+  ],
   "build": {
     "env": {
       "GO_BUILD_FLAGS": "-ldflags '-s -w'"
