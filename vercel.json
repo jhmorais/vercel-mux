@@ -1,6 +1,11 @@
 {
   "rewrites": [
-    { "source": "/api/gabi/test", "destination": "/api/gabi/test.go" }
+    { "source": "/api/clients/get", "destination": "/api/clients/get.go" },
+    { "source": "/api/clients/get-id", "destination": "/api/clients/get_id.go" },
+    { "source": "/api/clients/get-name", "destination": "/api/clients/get_name.go" },
+    { "source": "/api/clients/delete", "destination": "/api/clients/delete.go" },
+    { "source": "/api/clients/create", "destination": "/api/clients/create.go" },
+    { "source": "/api/clients/update", "destination": "/api/clients/update.go" }
   ],
   "build": {
     "env": {
