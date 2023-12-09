@@ -18,8 +18,8 @@ func HandlerGabiTestPost(w http.ResponseWriter, r *http.Request) {
 
 func Gabi() {
 	r := mux.NewRouter()
-	r.HandleFunc("/gabi/test", HandlerGabiTest).Methods("GET")
-	r.HandleFunc("/gabi/test", HandlerGabiTestPost).Methods("POST")
+	r.HandleFunc("/", HandlerGabiTest).Methods("GET")
+	r.HandleFunc("/create", HandlerGabiTestPost).Methods("POST")
 
 	http.ListenAndServe(":8080", r)
 }
