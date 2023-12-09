@@ -2,9 +2,7 @@ package handler
 
 import (
 	"fmt"
-	"myapp/config"
 	"myapp/internal/contracts"
-	"myapp/internal/infra/di"
 	"myapp/utils"
 	"net/http"
 
@@ -32,12 +30,21 @@ func NewHTTPRouterClient(
 }
 
 func Create() {
-	config.LoadServerEnvironmentVars()
+	// config.LoadServerEnvironmentVars()
 
-	dependencies := di.NewBuild()
-	router := NewHTTPRouterClient(dependencies.Usecases.CreateClientUseCase)
+	// dependencies := di.NewBuild()
+	// router := NewHTTPRouterClient(dependencies.Usecases.CreateClientUseCase)
 
-	http.ListenAndServe(":8080", router)
+	// http.ListenAndServe(":8080", router)
+
+	r := mux.NewRouter()
+	r.HandleFunc("/", HandlerCreateClient2).Methods("POST")
+
+	http.ListenAndServe(":8080", r)
+}
+
+func HandlerCreateClient2(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "<h1>CREATED Client</h1>")
 }
 
 func (h *HandlerCreateClient) Post(w http.ResponseWriter, r *http.Request) {
