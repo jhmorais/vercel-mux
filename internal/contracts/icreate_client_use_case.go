@@ -3,8 +3,8 @@ package contracts
 import (
 	"context"
 
-	"myapp/api/internal/ports/input"
-	"myapp/api/internal/ports/output"
+	"myapp/internal/ports/input"
+	"myapp/internal/ports/output"
 )
 
 type CreateClientUseCase interface {

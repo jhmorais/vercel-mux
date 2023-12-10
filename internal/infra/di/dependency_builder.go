@@ -2,9 +2,9 @@ package di
 
 import (
 	"log"
-	"myapp/api/internal/contracts"
-	"myapp/api/internal/repositories"
-	"myapp/api/internal/usecases/client"
+	"myapp/internal/contracts"
+	"myapp/internal/repositories"
+	"myapp/internal/usecases/client"
 
 	"gorm.io/gorm"
 )

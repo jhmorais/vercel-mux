@@ -3,7 +3,7 @@ package repositories
 import (
 	"context"
 
-	"myapp/api/internal/domain/entities"
+	"myapp/internal/domain/entities"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"

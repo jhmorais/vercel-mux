@@ -3,7 +3,7 @@ package contracts
 import (
 	"context"
 
-	"myapp/api/internal/ports/output"
+	"myapp/internal/ports/output"
 )
 
 type ListClientUseCase interface {

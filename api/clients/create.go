@@ -2,8 +2,8 @@ package handler
 
 import (
 	"fmt"
-	"myapp/api/internal/contracts"
-	"myapp/api/utils"
+	"myapp/internal/contracts"
+	"myapp/utils"
 	"net/http"
 
 	"github.com/gorilla/mux"

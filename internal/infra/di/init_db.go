@@ -2,7 +2,7 @@ package di
 
 import (
 	"fmt"
-	"myapp/api/config"
+	"myapp/config"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

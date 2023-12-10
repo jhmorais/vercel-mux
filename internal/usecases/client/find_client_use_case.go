@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"myapp/api/internal/contracts"
-	"myapp/api/internal/ports/output"
-	"myapp/api/internal/repositories"
+	"myapp/internal/contracts"
+	"myapp/internal/ports/output"
+	"myapp/internal/repositories"
 )
 
 type findClientUseCase struct {
